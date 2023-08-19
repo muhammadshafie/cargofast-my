@@ -18,6 +18,7 @@
   --border-color: hsl(228, 99%, 98%);
   --body-color: #fff;
   --container-color: #fff;
+  --bg-red-cargo: linear-gradient(to right, #ea384d, #d31027);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
