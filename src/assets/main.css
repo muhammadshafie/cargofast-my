@@ -186,9 +186,13 @@ body.dark-theme {
 }
 /* Change background header */
 .scroll-header {
-  background-color: #ea384d;
+  background-color: #fff;
   box-shadow: 0 1px 4px hsla(228, 4%, 15%, 1);
 }
+
+/* .scroll-header a {
+  color: #ea384d;
+} */
 
 .scroll-header .nav__logo {
   color: var(--first-color);

@@ -809,16 +809,18 @@
           <li class="max-w-[2480px]">
             <div class="grid grid-rows-2 grid-flow-col">
               <div
-                v-for="(imagePath, index) in imagePaths"
-                :key="index"
+                v-for="(item, i) in jsonData"
+                :key="i"
+                :id="`Gallery-${i}`"
                 :class="[
                   '[&:nth-child(9n+2)]:mt-[-80px] mr-[40px] [&:nth-child(9n+1)]:w-[184px] [&:nth-child(9n+1)]:h-[184px] h-[270px] [&:nth-child(9n+1)]:ml-auto [&:nth-child(9n+1)]:pt-[28px] [&:nth-child(9n+5)]:mt-[120px] [&:nth-child(9n+6)]:mt-[40px] [&:nth-child(9n+5)]:h-[184px] [&:nth-child(9n+6)]:h-[184px] [&:nth-child(9n+5)]:w-[184px] [&:nth-child(9n+6)]:w-[184px] [&:nth-child(9n+7)]:mb-0 [&:nth-child(9n+8)]:mb-0 [&:nth-child(9n+7)]:mt-[40px] [&:nth-child(9n+8)]:mt-[-40px] [&:nth-child(9n+7)]:h-[184px] [&:nth-child(9n+8)]:h-[184px] [&:nth-child(9n+7)]:w-[184px] [&:nth-child(9n+8)]:w-[184px] [&:nth-child(9n+9)]:col-span-2 [&:nth-child(9n+9)]:row-span-2 [&:nth-child(9n+9)]:w-[580px] [&:nth-child(9n+9)]:h-[580px]',
                   { 'last:mt-[120px] last:row-span-2': isLastEven }
                 ]"
               >
                 <img
-                  :src="imagePath.src"
+                  :src="`https://drive.google.com/uc?export=view&id=${item.c[1].v}`"
                   alt="Image"
+                  loading="lazy"
                   class="object-cover w-full h-full rounded-xl aspect-square"
                 />
               </div>
@@ -827,15 +829,16 @@
           <li class="max-w-[2480px]" aria-hidden="true">
             <div class="grid grid-rows-2 grid-flow-col">
               <div
-                v-for="(imagePath, index) in imagePaths"
-                :key="index"
+                v-for="(item, i) in jsonData"
+                :key="i"
+                :id="`Gallery-${i}`"
                 :class="[
                   '[&:nth-child(9n+2)]:mt-[-80px] mr-[40px] [&:nth-child(9n+1)]:w-[184px] [&:nth-child(9n+1)]:h-[184px] h-[270px] [&:nth-child(9n+1)]:ml-auto [&:nth-child(9n+1)]:pt-[28px] [&:nth-child(9n+5)]:mt-[120px] [&:nth-child(9n+6)]:mt-[40px] [&:nth-child(9n+5)]:h-[184px] [&:nth-child(9n+6)]:h-[184px] [&:nth-child(9n+5)]:w-[184px] [&:nth-child(9n+6)]:w-[184px] [&:nth-child(9n+7)]:mb-0 [&:nth-child(9n+8)]:mb-0 [&:nth-child(9n+7)]:mt-[40px] [&:nth-child(9n+8)]:mt-[-40px] [&:nth-child(9n+7)]:h-[184px] [&:nth-child(9n+8)]:h-[184px] [&:nth-child(9n+7)]:w-[184px] [&:nth-child(9n+8)]:w-[184px] [&:nth-child(9n+9)]:col-span-2 [&:nth-child(9n+9)]:row-span-2 [&:nth-child(9n+9)]:w-[580px] [&:nth-child(9n+9)]:h-[580px]',
                   { 'last:mt-[120px] last:row-span-2': isLastEven }
                 ]"
               >
                 <img
-                  :src="imagePath.src"
+                  :src="`https://drive.google.com/uc?export=view&id=${item.c[1].v}`"
                   alt="Image"
                   class="object-cover w-full h-full rounded-xl aspect-square"
                 />
@@ -850,6 +853,8 @@
 </template>
 
 <script>
+import { fetchDataFromApi } from '@/util/fetchAPI'
+
 // Import GLightbox
 import 'glightbox/dist/css/glightbox.css'
 import 'glightbox/dist/js/glightbox.js'
@@ -859,23 +864,23 @@ export default {
   name: 'ImageGallery',
   data() {
     return {
-      imagePaths: [
-        { src: '/src/assets/img/gallery/gallery1.jpg' },
-        { src: '/src/assets/img/gallery/gallery2.jpg' },
-        { src: '/src/assets/img/gallery/gallery3.jpg' },
-        { src: '/src/assets/img/gallery/gallery4.jpg' },
-        { src: '/src/assets/img/gallery/gallery5.jpg' },
-        { src: '/src/assets/img/gallery/gallery6.jpg' },
-        { src: '/src/assets/img/gallery/gallery7.jpg' },
-        { src: '/src/assets/img/gallery/gallery8.jpg' },
-        { src: '/src/assets/img/gallery/gallery9.jpg' },
-        { src: '/src/assets/img/gallery/gallery10.jpg' },
-        { src: '/src/assets/img/gallery/gallery11.jpg' },
-        { src: '/src/assets/img/gallery/gallery12.jpg' }
-
-        // Add the paths for the rest of your images here
-      ]
+      jsonData: null
     }
+  },
+  methods: {
+    async fetchData() {
+      try {
+        const apiURL = '1902001541'
+        this.jsonData = await fetchDataFromApi(apiURL)
+        console.log('Fetched data:', this.jsonData)
+        // Now you can use parsedData in your component
+      } catch (error) {
+        console.error('An error occurred:', error)
+      }
+    }
+  },
+  created() {
+    this.fetchData()
   },
   mounted() {
     //lightbox settings
@@ -885,7 +890,7 @@ export default {
   },
   computed: {
     isLastEven() {
-      return this.imagePaths.length % 2 === 0
+      return this.jsonData.length % 2 === 0
     }
   }
 }
