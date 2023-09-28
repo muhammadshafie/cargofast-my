@@ -29,14 +29,14 @@
                   { 'last:mt-[120px] last:row-span-2': isLastEven }
                 ]"
               >
-                <a :href="generateImageLink(item.image_url)" data-type="image" class="glightbox">
-                  <img
-                    :src="generateImageLink(item.image_url)"
-                    :alt="`Gallery_Image-${i}`"
-                    loading="lazy"
-                    class="object-cover w-full h-full rounded-xl aspect-square"
-                  />
-                </a>
+                <!-- <a :href="generateImageLink(item.image_url)" data-type="image" class="glightbox"> -->
+                <img
+                  :src="generateImageLink(item.image_url)"
+                  :alt="`Gallery_Image-${i}`"
+                  loading="lazy"
+                  class="object-cover w-full h-full rounded-xl aspect-square"
+                />
+                <!-- </a> -->
               </div>
             </div>
           </li>
@@ -51,14 +51,12 @@
                   { 'last:mt-[120px] last:row-span-2': isLastEven }
                 ]"
               >
-                <a :href="generateImageLink(item.image_url)" data-type="image" class="glightbox">
-                  <img
-                    :src="generateImageLink(item.image_url)"
-                    :alt="`Gallery_Image-${i}`"
-                    loading="lazy"
-                    class="object-cover w-full h-full rounded-xl aspect-square"
-                  />
-                </a>
+                <img
+                  :src="generateImageLink(item.image_url)"
+                  :alt="`Gallery_Image-${i}`"
+                  loading="lazy"
+                  class="object-cover w-full h-full rounded-xl aspect-square"
+                />
               </div>
             </div>
           </li>
@@ -72,10 +70,10 @@
 <script>
 import getData from '@/utils/fetchAPI'
 
-// Import GLightbox
-import 'glightbox/dist/css/glightbox.css'
-import 'glightbox/dist/js/glightbox.js'
-import GLightbox from 'glightbox'
+// // Import GLightbox
+// import 'glightbox/dist/css/glightbox.css'
+// import 'glightbox/dist/js/glightbox.js'
+// import GLightbox from 'glightbox'
 
 export default {
   name: 'ImageGallery',
@@ -104,13 +102,13 @@ export default {
       return `https://drive.google.com/uc?export=view&id=${imageId}`
     }
   },
-  mounted() {
-    this.fetchData(),
-      //lightbox settings
-      (this.lightbox = GLightbox({
-        selector: '.glightbox'
-      }))
-  },
+  // mounted() {
+  //   this.fetchData(),
+  //     //lightbox settings
+  //     (this.lightbox = GLightbox({
+  //       selector: '.glightbox'
+  //     }))
+  // },
   computed: {
     isLastEven() {
       return this.apiData.length % 2 === 0
