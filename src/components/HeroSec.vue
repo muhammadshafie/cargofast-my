@@ -8,13 +8,17 @@
     <!-- Header HERE -->
 
     <!-- Hero Section Here -->
-    <div class="relative isolate px-6 pt-14 lg:px-8 bg-red-cargo bg-opacity-50">
+    <div class="relative isolate px-6 pt-14 lg:px-8">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div class="text-center">
-          <h1 class="capitalize text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h1
+            class="capitalize text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-white"
+          >
             {{ item.main_title }}
           </h1>
-          <p class="mt-6 text-lg leading-8 text-gray-900">
+          <p
+            class="mt-6 text-lg leading-8 text-gray-900 drop-shadow-lg font-bold [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-white"
+          >
             {{ item.main_description }}
           </p>
 

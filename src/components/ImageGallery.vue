@@ -102,13 +102,13 @@ export default {
       return `https://drive.google.com/uc?export=view&id=${imageId}`
     }
   },
-  // mounted() {
-  //   this.fetchData(),
-  //     //lightbox settings
-  //     (this.lightbox = GLightbox({
-  //       selector: '.glightbox'
-  //     }))
-  // },
+  mounted() {
+    this.fetchData()
+    //lightbox settings
+    //     (this.lightbox = GLightbox({
+    //       selector: '.glightbox'
+    //     }))
+  },
   computed: {
     isLastEven() {
       return this.apiData.length % 2 === 0

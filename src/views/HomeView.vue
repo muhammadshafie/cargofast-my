@@ -18,7 +18,7 @@ async function fetchData() {
     const tab = 'section_content' // Replace with the actual tab name you want to fetch
     const result = await getData(tab)
     apiData.value = result
-    console.log(apiData.value)
+    // console.log(apiData.value)
   } catch (error) {
     console.error(error)
   }

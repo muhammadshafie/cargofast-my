@@ -136,7 +136,7 @@ export default {
       try {
         const tab = 'footer' // Replace with the actual tab name you want to fetch
         const result = await getData(tab)
-        console.log(result)
+        // console.log(result)
         this.apiData = result
       } catch (error) {
         console.error(error)

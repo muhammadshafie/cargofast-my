@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="pt-[72px] md:pt-[80px] mb-[80px] md:mb-[60px]">
+    <section id="about" class="pt-[72px] md:pt-[80px] mb-[80px] md:mb-[60px]">
       <div class="mx-auto max-w-6xl lg:px-0 md:px-0 px-6">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
@@ -90,7 +90,7 @@ export default {
       try {
         const tab = 'about_us' // Replace with the actual tab name you want to fetch
         const result = await getData(tab)
-        console.log(result)
+        // console.log(result)
         this.apiData = result
       } catch (error) {
         console.error(error)
