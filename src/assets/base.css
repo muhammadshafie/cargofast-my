@@ -19,6 +19,7 @@
   --body-color: #fff;
   --container-color: #fff;
   --bg-red-cargo: linear-gradient(to right, #ea384d, #d31027);
+  --bg-red-cargo-op: linear-gradient(to right, rgba(234, 56, 77, 0.2), rgba(211, 16, 39, 0.2));
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/

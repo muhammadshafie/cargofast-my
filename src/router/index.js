@@ -11,11 +11,6 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
-    },
     // Add the 404 route at the end
     {
       path: '/:catchAll(.*)', // Matches any path that doesn't match the above routes

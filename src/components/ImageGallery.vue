@@ -3,804 +3,16 @@
     <section
       class="service w-full relative text-white bg-red-cargo pt-[72px] md:pt-[80px]"
       id="gallery"
+      v-if="data.section_id === 'gallery'"
     >
-      <!-- <div class="gallery__container container">
-        <span class="section__subtitle">Proven Experience</span>
-        <h2 class="section__title">Our Gallery<span>.</span></h2>
-      </div> -->
-
-      <!-- <div class="gallery">
-        <div class="gallery_img">
-          <a
-            href="https://drive.google.com/uc?id=1b1ZE7N_Hno8OBQt2n_a03q1MgfmNi0zT"
-            class="glightbox"
-            data-type="image"
-            ><img
-              src="https://drive.google.com/uc?id=1b1ZE7N_Hno8OBQt2n_a03q1MgfmNi0zT"
-              alt="Image"
-          /></a>
-        </div>
-      </div> -->
-
-      <!-- <div class="relative mt-[88px] pt-[40px] overflow-hidden">
-        <ul class="relative flex flex-row w-max z-[2] animate-sustainable">
-          <li class="max-w-[620px]">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="w-[184px] ml-auto pt-[28px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mt-[-80px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="col-span-full mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=1160&amp;quality=40&amp;format=auto&amp;height=1160 1160w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580 580w
-                    "
-                    sizes="580px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="580"
-                    height="580"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="w-[184px] ml-auto pt-[28px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mt-[-80px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="col-span-full mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=1160&amp;quality=40&amp;format=auto&amp;height=1160 1160w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580 580w
-                    "
-                    sizes="580px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="580"
-                    height="580"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="w-[184px] ml-auto pt-[28px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mt-[-80px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="col-span-full mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=1160&amp;quality=40&amp;format=auto&amp;height=1160 1160w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580 580w
-                    "
-                    sizes="580px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="580"
-                    height="580"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="w-[184px] ml-auto pt-[28px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mt-[-80px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]" aria-hidden="true">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="col-span-full mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=1160&amp;quality=40&amp;format=auto&amp;height=1160 1160w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580 580w
-                    "
-                    sizes="580px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="580"
-                    height="580"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]" aria-hidden="true">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="w-[184px] ml-auto pt-[28px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mt-[-80px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]" aria-hidden="true">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="col-span-full mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=1160&amp;quality=40&amp;format=auto&amp;height=1160 1160w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580 580w
-                    "
-                    sizes="580px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="580"
-                    height="580"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]" aria-hidden="true">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="w-[184px] ml-auto pt-[28px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mt-[-80px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]" aria-hidden="true">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="col-span-full mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=1160&amp;quality=40&amp;format=auto&amp;height=1160 1160w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-8.jpg?width=580&amp;quality=80&amp;format=auto&amp;height=580 580w
-                    "
-                    sizes="580px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="580"
-                    height="580"
-                /></picture>
-              </div>
-            </div>
-          </li>
-          <li class="max-w-[620px]" aria-hidden="true">
-            <div class="grid grid-cols-2 shrink-0">
-              <div class="w-[184px] ml-auto pt-[28px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-1.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-2.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mt-[-80px] mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-3.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-              <div class="mr-[40px] mb-[40px]">
-                <picture class="overflow-hidden rounded-[17px] aspect-square">
-                  <source
-                    media="(-webkit-min-device-pixel-ratio: 1.25)"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=540&amp;quality=40&amp;format=auto&amp;height=540 540w
-                    " />
-                  <img
-                    src="https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270"
-                    srcset="
-                      https://dpu9z4r46dtyt.cloudfront.net/public/rect-4.jpg?width=270&amp;quality=80&amp;format=auto&amp;height=270 270w
-                    "
-                    sizes="270px"
-                    alt=""
-                    loading="lazy"
-                    class="block w-full h-auto object-cover"
-                    decoding="async"
-                    width="270"
-                    height="270"
-                /></picture>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div> -->
-
       <div class="mx-auto max-w-6xl lg:px-0 md:px-0 px-6">
         <div class="col-span-full md:col-start-2 md:col-span-5 text-center md:text-left">
-          <h2 class="h2 text-white">Proven Experience</h2>
-          <h3 class="relative translate-y-[-0.3em] tracking-[-0.06em] text-[51px]">Our Gallery</h3>
+          <h2 class="h2 text-white">{{ data.section_subtitle }}</h2>
+          <h3 class="relative translate-y-[-0.3em] tracking-[-0.06em] text-[51px]">
+            {{ data.section_title }}
+          </h3>
           <p class="body-l md:body-xl mt-[15px]">
-            "We always ready to help by providing the best service for you. We believe a satisfied
-            customer is the best business strategy of all. Versatility is showcased across a wide
-            spectrum of industries we've catered to."
+            {{ data.section_description }}
           </p>
         </div>
       </div>
@@ -809,39 +21,44 @@
           <li class="max-w-[2480px]">
             <div class="grid grid-rows-2 grid-flow-col">
               <div
-                v-for="(item, i) in jsonData"
+                v-for="(item, i) in apiData"
                 :key="i"
-                :id="`Gallery-${i}`"
+                :id="`Gallery_Image-${i}`"
                 :class="[
                   '[&:nth-child(9n+2)]:mt-[-80px] mr-[40px] [&:nth-child(9n+1)]:w-[184px] [&:nth-child(9n+1)]:h-[184px] h-[270px] [&:nth-child(9n+1)]:ml-auto [&:nth-child(9n+1)]:pt-[28px] [&:nth-child(9n+5)]:mt-[120px] [&:nth-child(9n+6)]:mt-[40px] [&:nth-child(9n+5)]:h-[184px] [&:nth-child(9n+6)]:h-[184px] [&:nth-child(9n+5)]:w-[184px] [&:nth-child(9n+6)]:w-[184px] [&:nth-child(9n+7)]:mb-0 [&:nth-child(9n+8)]:mb-0 [&:nth-child(9n+7)]:mt-[40px] [&:nth-child(9n+8)]:mt-[-40px] [&:nth-child(9n+7)]:h-[184px] [&:nth-child(9n+8)]:h-[184px] [&:nth-child(9n+7)]:w-[184px] [&:nth-child(9n+8)]:w-[184px] [&:nth-child(9n+9)]:col-span-2 [&:nth-child(9n+9)]:row-span-2 [&:nth-child(9n+9)]:w-[580px] [&:nth-child(9n+9)]:h-[580px]',
                   { 'last:mt-[120px] last:row-span-2': isLastEven }
                 ]"
               >
-                <img
-                  :src="`https://drive.google.com/uc?export=view&id=${item.c[1].v}`"
-                  alt="Image"
-                  loading="lazy"
-                  class="object-cover w-full h-full rounded-xl aspect-square"
-                />
+                <a :href="generateImageLink(item.image_url)" data-type="image" class="glightbox">
+                  <img
+                    :src="generateImageLink(item.image_url)"
+                    :alt="`Gallery_Image-${i}`"
+                    loading="lazy"
+                    class="object-cover w-full h-full rounded-xl aspect-square"
+                  />
+                </a>
               </div>
             </div>
           </li>
           <li class="max-w-[2480px]" aria-hidden="true">
             <div class="grid grid-rows-2 grid-flow-col">
               <div
-                v-for="(item, i) in jsonData"
+                v-for="(item, i) in apiData"
                 :key="i"
-                :id="`Gallery-${i}`"
+                :id="`Gallery_Image-${i}`"
                 :class="[
                   '[&:nth-child(9n+2)]:mt-[-80px] mr-[40px] [&:nth-child(9n+1)]:w-[184px] [&:nth-child(9n+1)]:h-[184px] h-[270px] [&:nth-child(9n+1)]:ml-auto [&:nth-child(9n+1)]:pt-[28px] [&:nth-child(9n+5)]:mt-[120px] [&:nth-child(9n+6)]:mt-[40px] [&:nth-child(9n+5)]:h-[184px] [&:nth-child(9n+6)]:h-[184px] [&:nth-child(9n+5)]:w-[184px] [&:nth-child(9n+6)]:w-[184px] [&:nth-child(9n+7)]:mb-0 [&:nth-child(9n+8)]:mb-0 [&:nth-child(9n+7)]:mt-[40px] [&:nth-child(9n+8)]:mt-[-40px] [&:nth-child(9n+7)]:h-[184px] [&:nth-child(9n+8)]:h-[184px] [&:nth-child(9n+7)]:w-[184px] [&:nth-child(9n+8)]:w-[184px] [&:nth-child(9n+9)]:col-span-2 [&:nth-child(9n+9)]:row-span-2 [&:nth-child(9n+9)]:w-[580px] [&:nth-child(9n+9)]:h-[580px]',
                   { 'last:mt-[120px] last:row-span-2': isLastEven }
                 ]"
               >
-                <img
-                  :src="`https://drive.google.com/uc?export=view&id=${item.c[1].v}`"
-                  alt="Image"
-                  class="object-cover w-full h-full rounded-xl aspect-square"
-                />
+                <a :href="generateImageLink(item.image_url)" data-type="image" class="glightbox">
+                  <img
+                    :src="generateImageLink(item.image_url)"
+                    :alt="`Gallery_Image-${i}`"
+                    loading="lazy"
+                    class="object-cover w-full h-full rounded-xl aspect-square"
+                  />
+                </a>
               </div>
             </div>
           </li>
@@ -853,7 +70,7 @@
 </template>
 
 <script>
-import { fetchDataFromApi } from '@/util/fetchAPI'
+import getData from '@/utils/fetchAPI'
 
 // Import GLightbox
 import 'glightbox/dist/css/glightbox.css'
@@ -862,35 +79,41 @@ import GLightbox from 'glightbox'
 
 export default {
   name: 'ImageGallery',
+  props: {
+    data: Object
+  },
   data() {
     return {
-      jsonData: null
+      apiData: []
     }
   },
   methods: {
     async fetchData() {
       try {
-        const apiURL = '1902001541'
-        this.jsonData = await fetchDataFromApi(apiURL)
-        console.log('Fetched data:', this.jsonData)
-        // Now you can use parsedData in your component
+        const tab = 'gallery' // Replace with the actual tab name you want to fetch
+        const result = await getData(tab)
+        // console.log(result)
+        this.apiData = result
+        // console.log(result);
       } catch (error) {
-        console.error('An error occurred:', error)
+        console.error(error)
       }
+    },
+    /* ============  Generate Image Link combine with data ============ */
+    generateImageLink(imageId) {
+      return `https://drive.google.com/uc?export=view&id=${imageId}`
     }
   },
-  created() {
-    this.fetchData()
-  },
   mounted() {
-    //lightbox settings
-    this.lightbox = GLightbox({
-      selector: '.glightbox'
-    })
+    this.fetchData(),
+      //lightbox settings
+      (this.lightbox = GLightbox({
+        selector: '.glightbox'
+      }))
   },
   computed: {
     isLastEven() {
-      return this.jsonData.length % 2 === 0
+      return this.apiData.length % 2 === 0
     }
   }
 }
