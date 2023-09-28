@@ -1,8 +1,9 @@
 <template>
+  <!-- {{ apiData }} -->
   <div
     v-for="item in apiData"
     :key="item.id"
-    :style="{ backgroundImage: `url(${item.bg_image})` }"
+    :style="{ 'background-image': `url(${generateImageLink(item.bg_image)})` }"
     class="bg-white bg-no-repeat bg-fixed bg-cover bg-center"
   >
     <!-- Header HERE -->
@@ -14,6 +15,7 @@
           <h1
             class="capitalize text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-white"
           >
+            <!-- {{ generateImageLink(item.bg_image) }} -->
             {{ item.main_title }}
           </h1>
           <p
