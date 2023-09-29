@@ -66,7 +66,7 @@
                   class="bg-black bg-opacity-75 rounded-t-lg bottom-0 text-white left-0 h-full max-h-full overflow-auto p-2 absolute right-0 group-hover:translate-y-0 translate-y-full ease-in-out duration-300"
                 >
                   <h3 class="p-4 text-white">
-                    {{ item.section_description }}
+                    {{ item.service_description }}
                   </h3>
                 </div>
                 <div class="">
