@@ -115,10 +115,10 @@ export default {
     const mobileMenuOpen = ref(false)
 
     const navigation = [
-      { name: 'Gallery', href: '#' },
-      { name: 'Services', href: '#' },
-      { name: 'About Us', href: '#' },
-      { name: 'Contact', href: '#' }
+      { name: 'Gallery', href: '#gallery' },
+      { name: 'Services', href: '#service' },
+      { name: 'About Us', href: '#about' },
+      { name: 'Contact', href: '#contact_us' }
     ]
 
     return {
