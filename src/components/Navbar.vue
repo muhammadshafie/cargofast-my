@@ -27,8 +27,8 @@
           <a
             v-for="item in navigation"
             :key="item.name"
-            :href="item.href"
-            class="text-sm font-semibold leading-6 text-gray-900"
+            @click.prevent="scrollToSection(item.href)"
+            class="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
             >{{ item.name }}</a
           >
         </div>
@@ -121,9 +121,20 @@ export default {
       { name: 'Contact', href: '#contact_us' }
     ]
 
+    const scrollToSection = (hash) => {
+      const element = document.querySelector(hash)
+      if (element) {
+        const top = element.getBoundingClientRect().top + window.pageYOffset - 90
+        window.scrollTo({
+          top: top,
+          behavior: 'smooth'
+        })
+      }
+    }
     return {
       mobileMenuOpen,
-      navigation
+      navigation,
+      scrollToSection
     }
   }
 }
