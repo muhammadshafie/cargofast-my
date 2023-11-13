@@ -26,8 +26,8 @@
 
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="#"
-              class="flex items-center rounded-full bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              @click.prevent="scrollToSection(`#${item.goto_section}`)"
+              class="cursor-pointer flex items-center rounded-full bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               <p>{{ item.cta }}</p>
               <ArrowDownIcon class="h-4 w-4 text-white" />
@@ -71,6 +71,21 @@ export default {
     /* ============  Generate Image Link combine with data ============ */
     generateImageLink(imageId) {
       return `https://drive.google.com/uc?export=view&id=${imageId}`
+    }
+  },
+  setup() {
+    const scrollToSection = (hash) => {
+      const element = document.querySelector(hash)
+      if (element) {
+        const top = element.getBoundingClientRect().top + window.pageYOffset - 90
+        window.scrollTo({
+          top: top,
+          behavior: 'smooth'
+        })
+      }
+    }
+    return {
+      scrollToSection
     }
   }
 }
